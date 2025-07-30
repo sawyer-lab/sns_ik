@@ -81,6 +81,7 @@ int SNSPositionIK::CartToJnt(const KDL::JntArray& joint_seed,
   Eigen::VectorXd jl_low = m_ikVelSolver->getJointLimitLow();
   Eigen::VectorXd jl_high = m_ikVelSolver->getJointLimitHigh();
   Eigen::VectorXd maxJointVel = m_ikVelSolver->getJointVelocityMax();
+  ROS_ERROR("CALLING THE IK SOLVER");
 
   // initialize variables
   bool solutionFound = false;
